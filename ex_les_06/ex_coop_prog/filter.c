@@ -4,15 +4,17 @@
 #include <unistd.h>
 #include <ctype.h>
 
+
+// legge caratteri da tstiera 
 int main() {
 
     int c;
 
-    while ((c = getchar()) != EOF) {
+    while ((c = getchar()) != EOF) { // prendo tramite stdinput i caratteri singoli
 
-        c = toupper(c);
-        putchar(c);
-        fflush(stdout);
+        c = toupper(c); // metto in maiuscolo
+        putchar(c); // scrivo in stdoutput
+        fflush(stdout); // forzo la scrittura in tempo reale per evitare che la scrittura venga rimandata
 
     }
     
