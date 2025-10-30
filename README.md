@@ -1,4 +1,4 @@
-Raccolta di esercizi SO
+Raccolta di esercizi di Sistemi Operativi
 
 # ex_les_01_02_03
 
