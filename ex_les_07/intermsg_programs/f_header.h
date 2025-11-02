@@ -6,6 +6,7 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/msg.h>
+#include <sys/wait.h>
 
 #define KEY 1234 // Unique key for the message queue
 
