@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include <unistd.h>
+#include <time.h>
+#include <errno.h>
 #include <sys/types.h>
 #include <sys/msg.h>
-
 /*
 @brief Creates a new message queue or accesses an existing one.
 @param key A unique identifier for the message queue.
@@ -73,7 +73,7 @@ int main() {
 
     printf("--- Statistiche (Dopo) ---\n");
     printf("Numero messaggi in coda (msg_qnum):   %lu\n", ds_buffer.msg_qnum);
-    printf("Byte correnti in coda (msg_cbytes): %lu\n", ds_buffer.msg_cbytes);
+    printf("Byte correnti in coda (msg_cbytes): %lu\n", ds_buffer.__msg_cbytes);
     printf("Tempo ultimo invio (msg_stime):     %ld (secondi)\n", ds_buffer.msg_stime);
     // Stampiamolo in modo leggibile
     printf("Tempo ultimo invio (leggibile):   %s", ctime(&ds_buffer.msg_stime));
