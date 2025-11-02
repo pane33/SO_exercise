@@ -8,6 +8,14 @@ Raccolta di esercizi sull'utilizzo di fork, comunicazione tra processi imparenta
 
 Raccolta di esercizi sull'utilizzo di kill() e implementazione del signal_handler
 
+# ex_les_05
+
+Esempio su processi imparentati che usaono pipe
+
 # ex_les_06
 
 Raccolta di esercizi sull'utilizzo di pipe tra processi imparentati e non
+
+# ex_les_07
+
+Raccolta di esempi sull'utilizzo della coda di messaggi, struttura msqid_ds e funzioni msgsend(), msgrcv(), msgctl(), ecc
